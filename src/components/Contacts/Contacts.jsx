@@ -16,7 +16,6 @@ export const Contacts = () => {
     dispatch(fetchContacts());
   }, [dispatch]);
 
-  console.log(contacts);
   const formattedFilter = filter.toLowerCase();
   const filteredContacts = contacts.filter(contact =>
     contact.name.toLowerCase().includes(formattedFilter)
